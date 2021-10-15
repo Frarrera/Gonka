@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Gonka</title>
+    <base href="/" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <link type="text/css" rel="stylesheet" href="css/css.css">
+    <link type="text/css" rel="stylesheet" href="css/css_002.css">
+
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="Gonka.Client.styles.css" rel="stylesheet" />
+    <link href="manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <div id="app">
+        <!-- Start page loading -->
+        <div id="preloader">
+            <div class="row loader">
+                <div class="loader-icon"></div>
+            </div>
+        </div>
+        <!-- End page loading -->
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+
+    <!-- Java script -->
+    <script src="js/core.js"></script>
+    <script src="js/headline.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/scripts.js"></script>
+
+    <!-- google map api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqFuLx8S7A8eianoUhkYMeXpGPvsXp1NM"></script>
+
+    <!-- contact form scripts -->
+    <script src="js/mailform/jquery.js"></script>
+    <script src="js/mailform/jquery_002.js"></script>
+    <!-- all js include end -->
+
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>

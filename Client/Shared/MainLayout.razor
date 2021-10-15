@@ -1,0 +1,153 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime js
+<MudLayout>
+    <MudAppBar DisableGutters="true" Class="header valign bg-img creative-banner background-position-top" data-scroll-index="0"
+               data-overlay-dark="6" data-background="img/bg1.jpg" data-stellar-background-ratio="0.5">
+        
+        @*<MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        @AppConstants.AppName
+
+        <MudNavLink>Invitaciones</MudNavLink>
+        <MudNavLink Match="NavLinkMatch.Prefix" Href="/">Invitaciones digitales</MudNavLink>*@
+
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container sm-padding-10px-tb sm-padding-15px-lr">
+
+                <!-- start logo -->
+                <a class="logo" href="javascript:void(0);" data-scroll-nav="0">
+                    <img src="img/logo_pagatuservicio.png" alt="Hiluxx - One Page Parallax" title="Hiluxx - One Page Parallax">
+                </a>
+                <!-- end Logo -->
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"><i class="fas fa-bars"></i></span>
+                </button>
+
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="javascript:void(0);" data-scroll-nav="0">Invitaciones Digitales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-scroll-nav="1">Identidad Corporativa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-scroll-nav="2">Medios impresos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-scroll-nav="3">Souvenirs</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end navbar links -->
+
+            </div>
+            <a href="javascript:void(0)" class="sidemenu_btn sm-display-none" id="sidebar_toggle">
+                <span></span> <span></span> <span></span>
+            </a>
+        </nav>
+        <!-- End Navbar  -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center caption">
+                    <h1 class="banner-headline clip no-margin">
+                        <span class="blc">Design for </span>
+                        <span class="banner-words-wrapper">
+                            <b class="is-visible font-weight-800">Startup</b>
+                            <b class="font-weight-800">Website</b>
+                            <b class="font-weight-800">Agency</b>
+                        </span>
+                    </h1>
+                    <p class="margin-30px-bottom sm-margin-20px-bottom xs-display-none">
+                        We provide best for our client
+                        and respect their business design idea.
+                    </p>
+                    <div class="social-links xs-margin-20px-top">
+                        <a href="javascript:void(0);"><i class="fab fa-facebook-f text-light-gray"></i></a>
+                        <a href="javascript:void(0);"><i class="fab fa-twitter text-light-gray"></i></a>
+                        <a href="javascript:void(0);"><i class="fab fa-google-plus-g text-light-gray"></i></a>
+                        <a href="javascript:void(0);"><i class="fab fa-dribbble text-light-gray"></i></a>
+                        <a href="javascript:void(0);"><i class="fab fa-youtube text-light-gray"></i></a>
+                        <a href="javascript:void(0);"><i class="fab fa-linkedin-in text-light-gray"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Wave area -->
+        <div class="wave-area">
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <!-- End Wave area -->
+        <!-- Start Sidemenu -->
+        <div class="side-menu">
+            <div class="inner-wrapper">
+                <span class="btn-close" id="btn_sidebar_colse"></span>
+                <nav class="side-nav width-100">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="javascript:void(0);" data-scroll-nav="0">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-scroll-nav="1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-scroll-nav="2">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-scroll-nav="3">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-scroll-nav="4">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-scroll-nav="5">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" data-scroll-nav="6">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="side-footer width-100">
+                    <div class="social-links">
+                        <a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Sidemenu -->
+        <!-- Close Sidemenu -->
+        <a id="close_sidebar" href="javascript:void(0);"></a>
+        <!-- End Sidemenu -->
+
+        <div class="arrow">
+            <a href="javascript:void(0);" data-scroll-nav="1">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </MudAppBar>
+    @*<MudDrawer @bind-Open="@_drawerOpen">
+        <NavMenu />
+    </MudDrawer>*@
+    <MudMainContent>
+        <MudContainer>
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+@code {
+    bool _drawerOpen = true;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}

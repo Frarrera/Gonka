@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gonka.Server", "Server\Gonka.Server.csproj", "{1B7118E6-088F-459A-8E09-7FBEB9036249}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gonka.Client", "Client\Gonka.Client.csproj", "{F24C708E-090B-4565-B500-5485AB9DCD80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{93B5E0B7-F7FA-4D09-A1F2-BCA662F928AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gonka.Core", "Core\Gonka.Core\Gonka.Core.csproj", "{18AA504D-BADA-400B-96A7-DBB199E35AED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B7118E6-088F-459A-8E09-7FBEB9036249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7118E6-088F-459A-8E09-7FBEB9036249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7118E6-088F-459A-8E09-7FBEB9036249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7118E6-088F-459A-8E09-7FBEB9036249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F24C708E-090B-4565-B500-5485AB9DCD80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F24C708E-090B-4565-B500-5485AB9DCD80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F24C708E-090B-4565-B500-5485AB9DCD80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F24C708E-090B-4565-B500-5485AB9DCD80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AA504D-BADA-400B-96A7-DBB199E35AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AA504D-BADA-400B-96A7-DBB199E35AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AA504D-BADA-400B-96A7-DBB199E35AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AA504D-BADA-400B-96A7-DBB199E35AED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18AA504D-BADA-400B-96A7-DBB199E35AED} = {93B5E0B7-F7FA-4D09-A1F2-BCA662F928AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B957727-43BD-4DFA-921E-0FA6DF2AB269}
+	EndGlobalSection
+EndGlobal

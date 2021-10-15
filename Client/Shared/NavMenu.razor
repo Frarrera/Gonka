@@ -1,0 +1,24 @@
+﻿<MudNavMenu>
+    <MudText Typo="Typo.h4" Class="px-4">@AppConstants.AppName</MudText>
+    <MudText Typo="Typo.body2" Class="px-4 mud-text-secondary">
+        Diseño gráfico
+    </MudText>
+    <MudDivider Class="my-2" />
+    <MudNavLink Href="/index">Dashboard</MudNavLink>
+    <MudNavGroup Title="Settings" Expanded="true">
+        <MudNavLink Href="/users">Users</MudNavLink>
+        <MudNavLink Href="/settings">Security</MudNavLink>
+    </MudNavGroup>
+    <MudNavLink Href="/about">About</MudNavLink>
+</MudNavMenu>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
